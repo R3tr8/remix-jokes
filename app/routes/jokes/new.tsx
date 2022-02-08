@@ -35,6 +35,7 @@ export const action: ActionFunction = async ({
   const form = await request.formData();
   const name = form.get("name");
   const content = form.get("content");
+  
   if (
     typeof name !== "string" ||
     typeof content !== "string"
